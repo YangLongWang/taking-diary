@@ -8,7 +8,7 @@ const diarySchema = new Schema({
     min: 1,
   },
   date: {
-    type: Date,
+    type: String,
     required: true,
   },
 });

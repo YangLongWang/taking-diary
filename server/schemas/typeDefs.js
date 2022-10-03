@@ -14,7 +14,7 @@ const typeDefs = gql`
   type Diary {
     _id: ID
     content: String
-    date: Date
+    date: String
   }
 
   type Query {
@@ -29,7 +29,7 @@ const typeDefs = gql`
   type Mutation {
     login(email: String!, password: String!): Auth
     addUser(username: String!, email: String!, password: String!): Auth
-    saveDiary(_id: String, content: String, date: Date): User
+    saveDiary(_id: String, content: String, date: String): User
     removeDiary(_id: ID!): User
   }
 `;
