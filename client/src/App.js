@@ -5,6 +5,7 @@ import {
   ApolloProvider,
   createHttpLink,
 } from "@apollo/client";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { setContext } from "@apollo/client/link/context";
 
 import "./App.css";
@@ -34,9 +35,15 @@ const client = new ApolloClient({
 
 function App() {
   return (
-    <div>
-      <div>Hi</div>
-    </div>
+    <ApolloProvider client={client}>
+      <Router>
+        <Routes>
+          <Route path='/' element={<Home  />} />
+          <Route path='/signup' element={<Signup />} />
+          <Route path='/login' element={<Login />} />
+        </Routes>
+      </Router>
+    </ApolloProvider>
   );
 }
 
