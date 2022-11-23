@@ -1,12 +1,11 @@
 import React from "react";
-import { Box, Typography, Container, Button } from "@mui/material";
+import { Box, Typography, Button } from "@mui/material";
+import Journal from "../components/Journal";
 
 function Home() {
   return (
     <>
-      <Box sx={{ bgcolor: "#cfe8fc", height: "50vh" }}>
-        <Typography variant="h4">Hello! Having a nice day!</Typography>
-      </Box>
+      <Journal />
       <Button variant="outlined">add</Button>
     </>
   );

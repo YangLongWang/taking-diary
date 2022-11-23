@@ -1,23 +1,30 @@
 import React from "react";
-import Breadcrumbs from "@mui/material/Breadcrumbs";
+import { Box, Breadcrumbs, Button, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
-
 import "./index.css";
 
 export default function Header() {
   return (
-    <div className="header">
+    <Box sx={{ mb: 2 }} className="header">
       <div className="title">
-        <h1>Diary Maker</h1>
+        <Typography variant="h3" sx={{ mt: 2 }}>
+          Diary Maker
+        </Typography>
       </div>
 
       <div className="register">
         <Breadcrumbs aria-label="breadcrumb">
-          <Link to="/">Home</Link>
-          <Link to="/signup">Signup</Link>
-          <Link to="/login">Login</Link>
+          <Button>
+            <Link to="/">Home</Link>
+          </Button>
+          <Button>
+            <Link to="/signup">Signup</Link>
+          </Button>
+          <Button>
+            <Link to="/login">Login</Link>
+          </Button>
         </Breadcrumbs>
       </div>
-    </div>
+    </Box>
   );
 }
