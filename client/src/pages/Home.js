@@ -5,9 +5,10 @@ import Container from "@mui/material/Container";
 function Home() {
   return (
     <>
-      <Box sx={{ bgcolor: "#cfe8fc", height: "100%" }}>
-        <h1>Hello!</h1>
+      <Box sx={{ bgcolor: "#cfe8fc", height: "50vh" }}>
+        <h1>Hello! Having a nice day!</h1>
       </Box>
+      <button>add</button>
     </>
   );
 }
