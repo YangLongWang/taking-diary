@@ -9,7 +9,10 @@ import { Container } from "@mui/material";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Container maxWidth="md" sx={{ bgcolor: "#cfe8fc", height: "100vh" }}>
+    <Container
+      maxWidth="md"
+      sx={{ bgcolor: "#cfe8fc", width: "100%", height: "100vh" }}
+    >
       <App />
     </Container>
   </React.StrictMode>

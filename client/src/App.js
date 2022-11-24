@@ -8,8 +8,8 @@ import {
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { setContext } from "@apollo/client/link/context";
 
-import Container from '@mui/material/Container';
-import CssBaseline from '@mui/material/CssBaseline';
+import Container from "@mui/material/Container";
+import CssBaseline from "@mui/material/CssBaseline";
 
 import "./App.css";
 
@@ -46,9 +46,9 @@ function App() {
         <Router>
           <Header />
           <Routes>
-            <Route path='/' element={<Home  />} />
-            <Route path='/signup' element={<Signup />} />
-            <Route path='/login' element={<Login />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/login" element={<Login />} />
           </Routes>
           <Footer />
         </Router>

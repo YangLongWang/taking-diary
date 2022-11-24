@@ -5,7 +5,15 @@ import Journal from "../components/Journal";
 function Home() {
   return (
     <>
-      <Journal />
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
+        <Journal />
+      </Box>
+
       <Button variant="outlined">add</Button>
     </>
   );
