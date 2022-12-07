@@ -1,6 +1,6 @@
 import React from "react";
-import Box from "@mui/material/Box";
-import TextField from "@mui/material/TextField";
+import { Box, TextField, Button } from "@mui/material";
+
 import { Link } from "react-router-dom";
 
 function Signup() {
@@ -26,6 +26,7 @@ function Signup() {
           type="password"
           autoComplete="current-password"
         />
+        <Button variant="filled">Signup</Button>
       </div>
       <div>
         <Link to="/login">Already have an account</Link>

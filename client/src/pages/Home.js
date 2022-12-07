@@ -11,6 +11,8 @@ function Home() {
           justifyContent: "center",
         }}
       >
+        <Typography>Today:</Typography>
+        <Typography></Typography>
         <Journal />
       </Box>
 

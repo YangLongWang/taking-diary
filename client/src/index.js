@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Container
-      maxWidth="md"
+      maxWidth="lg"
       sx={{ bgcolor: "#cfe8fc", width: "100%", height: "100vh" }}
     >
       <App />
