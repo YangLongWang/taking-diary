@@ -1,23 +1,22 @@
 import React from "react";
-import { Box, Typography, Button } from "@mui/material";
+import { Grid, Box, Typography, Button } from "@mui/material";
 import Journal from "../components/Journal";
+import Time from "../components/Time";
 
 function Home() {
   return (
-    <>
-      <Box
-        sx={{
-          display: "flex",
-          justifyContent: "center",
-        }}
-      >
-        <Typography>Today:</Typography>
-        <Typography></Typography>
-        <Journal />
-      </Box>
-
+    <Grid
+      container
+      direction="column"
+      justifyContent="center"
+      alignItems="center"
+      spacing={2}
+      mt={2}
+    >
+      <Time />
+      <Journal />
       <Button variant="outlined">add</Button>
-    </>
+    </Grid>
   );
 }
 
