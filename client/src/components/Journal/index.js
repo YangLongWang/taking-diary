@@ -8,15 +8,15 @@ function Journal() {
         width: "100%",
         height: "600px",
         maxWidth: 500,
-        // border: "1px solid black",
         borderRadius: "20px",
         padding: 3,
         mb: 2,
         bgcolor: "#66bb6a",
+        // border: "1px solid black",
       }}
     >
       <Typography variant="subtitle1" gutterBottom>
-        Day 1
+        {/* Title: Weather: Mood: */}
       </Typography>
       <Typography
         variant="body1"
@@ -25,11 +25,11 @@ function Journal() {
           width: "100%",
           // maxWidth: 500,
           height: "500px",
-          // border: "1px solid black",
           borderRadius: "20px",
           padding: 2,
           bgcolor: "#81c784",
           overflowY: "scroll",
+          // border: "1px solid black",
         }}
       >
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
