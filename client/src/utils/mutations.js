@@ -37,3 +37,21 @@ export const LOGIN = gql`
     }
   }
 `;
+
+export const SAVEDIARY = gql`
+  mutation saveDiary($content: String!, $date: String!) {
+    saveDiary(content: $content, date: $date) {
+      user {
+        _id
+        username
+        email
+        diaryCount
+        savedDiaries {
+          _id
+          content
+          date
+        }
+      }
+    }
+  }
+`;
