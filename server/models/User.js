@@ -19,7 +19,7 @@ const userSchema = new Schema(
     password: {
       type: String,
       required: true,
-      min: 4,
+      min: 4, // ??? ???
     },
     savedDiaries: [diarySchema],
   },

@@ -55,6 +55,7 @@ function Signup() {
             name="email"
             label="email"
             type="text"
+            placeholder="<name>@<email>.com"
             onChange={handleChange}
           />
           <TextField
