@@ -13,7 +13,19 @@ function Journal() {
 
   const [saveDiary] = useMutation(SAVEDIARY);
 
-  const handleChange = (event) => {
+  // const handleChange = (event) => {
+  //   event.preventDefault();
+
+  //   const { name, value } = event.target;
+  //   console.log(name, value);
+
+  //   setDiaryState({
+  //     ...diaryState,
+  //     [name]: value,
+  //   });
+  // };
+
+  const handleSave = async (event) => {
     event.preventDefault();
 
     const { name, value } = event.target;
@@ -23,10 +35,6 @@ function Journal() {
       ...diaryState,
       [name]: value,
     });
-  };
-
-  const handleSave = async (event) => {
-    event.preventDefault();
 
     const response = await saveDiary({
       variables: {
@@ -76,7 +84,7 @@ function Journal() {
         fullWidth
         color="success"
         focused
-        onChange={handleChange}
+        // onChange={handleChange}
         onBlur={handleSave}
         name="content"
       />
